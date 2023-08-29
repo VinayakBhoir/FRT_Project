@@ -1,0 +1,147 @@
+/* Reset default margins and paddings */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #101010; /* Dark background color */
+  color: #fff; /* Light text color */
+}
+
+.navbar {
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #ff9900;
+}
+
+header {
+  background-image: url("landing-background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 15vh 0;
+  filter: brightness(70%); /* Darken the background image */
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #ff9900; /* Orange title color */
+}
+
+.header p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ccc; /* Light gray text color */
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tip {
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+  transition: background-color 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  background: linear-gradient(135deg, #ff9900, #e58200); /* Orange gradient background */
+  border-radius: 8px;
+  margin-bottom: 30px;
+  color: #fff; /* White text color */
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tip h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #fff; /* White text color */
+}
+
+.tip p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ddd; /* Light gray text color */
+}
+
+.tip ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #ddd; /* Light gray text color */
+}
+
+footer {
+  background-color: #101010; /* Dark background color */
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+.learn-more-button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-button:hover {
+  background-color: #e58200;
+}
+
+.tip img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  transition: transform 0.3s;
+  border-radius: 8px;
+}
+
+.tip img:hover {
+  transform: scale(1.05);
+}
